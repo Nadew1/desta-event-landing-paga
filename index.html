@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desta Event Landing Page</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./images/Screen Shot 2022-07-18 at 8.10.33 PM.png" class="logo"></a>
+            <input type="checkbox" id="checkbox">
+            <i class="fas fa-bars"></i>
+            <label for="check" class="checkbtn"></label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>About Us <span>DestaEvent </span></h2>
+                <p>We at Desta Events are passionate about producing memorable experiences. 
+                   Since we take the time to carefully consider the needs and preferences of our 
+                   clients, we are able to set ourselves apart from the competition. Every detail 
+                   is taken care of thanks to the creative solutions we've combined.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/Screen Shot 2022-07-18 at 8.06.36 PM.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="#"><img src="./images/Screen Shot 2022-07-18 at 8.06.10 PM.png" onclick="imgSlider('./images/Screen Shot 2022-07-18 at 8.06.10 PM.png'); changeCircleColor('#017143') " ></a></li>
+            <li><a href="#"><img src="./images/Screen Shot 2022-07-18 at 8.20.26 PM.png" onclick="imgSlider('./images/Screen Shot 2022-07-18 at 8.20.26 PM.png'); changeCircleColor('#eb7495') " ></a></li>
+            <li><a href="#"><img src="./images/Screen Shot 2022-07-18 at 8.07.32 PM.png" onclick="imgSlider('./images/Screen Shot 2022-07-18 at 8.07.32 PM.png'); changeCircleColor('#d752b1') " ></a></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./images/facebook.png"></a></li>
+            <li><a href="#"><img src="./images/twitter.png"></a></li>
+            <li><a href="#"><img src="./images/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
